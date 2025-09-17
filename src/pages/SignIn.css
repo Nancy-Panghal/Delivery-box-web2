@@ -1,0 +1,235 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  align-items: flex-start; /* Align to top to minimize space */
+  min-height: auto; /* Remove 100vh to collapse to content */
+  padding: 10px; /* Reduced padding */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signin-card {
+  background-color: #242323;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  min-height: auto;
+  box-sizing: border-box;
+}
+
+.signin-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.signin-input {
+  border: 2px solid #8d8c8c;
+  padding: 15px;
+  height: 52px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  color: #ffffff;
+  background-color: #1d1c1c;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.signin-password-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.signin-password-input {
+  flex: 1;
+  border: 2px solid #8d8c8c;
+  padding: 15px;
+  height: 52px;
+  border-radius: 14px;
+  color: #ffffff;
+  background-color: #1d1c1c;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 100%;
+}
+
+.signin-eye-icon {
+  position: absolute;
+  right: 15px;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.signin-eye-icon ion-icon {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.signin-status-message {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.signin-error-message {
+  color: #ff6b6b;
+}
+
+.signin-success-message {
+  color: #4ecdc4;
+}
+
+.signin-button {
+  background-color: #03d7fc;
+  padding: 15px 0;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 550;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.signin-button-disabled {
+  background-color: #81d4fa;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.signin-link-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.signin-link {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.signin-sign-up-text, .signin-sign-in-text {
+  margin-left: 5px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signin-sign-up-text:hover, .signin-sign-in-text:hover {
+  color: #00008b;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .signin-container {
+    padding: 5px; /* Reduced padding, removed large padding-top */
+    align-items: flex-start;
+  }
+  
+  .signin-card {
+    padding: 20px;
+    width: 100%;
+    min-height: auto;
+  }
+  
+  .signin-header {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .signin-input, .signin-password-input {
+    padding: 12px;
+    height: 44px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .signin-password-container {
+    margin-bottom: 15px;
+  }
+  
+  .signin-eye-icon {
+    right: 12px;
+  }
+  
+  .signin-eye-icon ion-icon {
+    font-size: 20px;
+  }
+  
+  .signin-status-message {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .signin-button {
+    padding: 12px 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  .signin-link {
+    font-size: 14px;
+  }
+  
+  .signin-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signin-container {
+    padding: 20px; /* Slightly reduced padding */
+  }
+  
+  .signin-card {
+    padding: 25px;
+  }
+  
+  .signin-header {
+    font-size: 22px;
+  }
+  
+  .signin-input, .signin-password-input {
+    padding: 14px;
+  }
+  
+  .signin-button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .signin-link-container {
+    margin-top: 15px;
+  }
+  
+  .signin-link {
+    font-size: 14px;
+  }
+  
+  .signin-sign-in-text {
+    display: inline-block;
+  }
+}

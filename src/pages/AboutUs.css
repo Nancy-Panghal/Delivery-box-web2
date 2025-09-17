@@ -1,0 +1,209 @@
+.about-us-container {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  color: #03d7fc;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section {
+  width: 75%;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.sub-header {
+  font-size: 22px;
+  font-weight: 600;
+  color: #03d7fc;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 28px;
+  margin-bottom: 15px;
+  letter-spacing: 0.03em;
+}
+
+.feedback-section {
+  background-color: rgba(3, 215, 252, 0.1);
+  border: 1px solid #03d7fc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: none;
+  min-width: 110px;
+  justify-content: center;
+}
+
+.contact-icon {
+  font-size: 22px;
+  color: #03d7fc;
+  margin-right: 8px;
+}
+
+.whatsapp {
+  color: #55e359;
+}
+
+.contact-button-text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.closing {
+  font-size: 18px;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  width: 85%;
+  line-height: 26px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .about-us-container {
+    padding: 16px;
+  }
+
+  .section {
+    width: 90%;
+  }
+
+  .header {
+    font-size: 32px;
+  }
+
+  .sub-header {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .contact-options {
+    flex-direction: column;
+  }
+
+  .contact-button {
+    padding: 10px 12px;
+    margin: 8px 0;
+    min-width: 80%;
+  }
+
+  .contact-icon {
+    font-size: 18px;
+  }
+
+  .contact-button-text {
+    font-size: 14px;
+  }
+
+  .closing {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-us-container {
+    padding: 18px;
+  }
+
+  .section {
+    width: 80%;
+  }
+
+  .header {
+    font-size: 28px;
+  }
+
+  .sub-header {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .contact-button {
+    padding: 10px 12px;
+  }
+
+  .contact-icon {
+    font-size: 20px;
+  }
+
+  .contact-button-text {
+    font-size: 15px;
+  }
+
+  .closing {
+    font-size: 16px;
+  }
+  .contact-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e0e0e0;
+}
+
+.contact-button-text {
+  margin-left: 0.5rem;
+}
+
+.whatsapp {
+  color: #25D366; /* WhatsApp green color */
+}
+}

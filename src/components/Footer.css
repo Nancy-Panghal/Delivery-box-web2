@@ -1,0 +1,251 @@
+/* Updated Footer.css */
+.footer {
+  background-color: #1d1c1c;
+  padding: 40px 20px 20px;
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.contact-column {
+  min-width: 220px;
+}
+
+.column-title {
+  color: #03d7fc;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.contact-icon {
+  font-size: 18px;
+  color: #03d7fc;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-link {
+  display: block;
+  color: white;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 6px 0;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+  width: 100%;
+}
+
+.footer-link:hover,
+.link-hover {
+  color: #03d7fc;
+}
+
+.company-description {
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon-x {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-whatsapp {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(43, 209, 65);
+  font-size: 26px;
+  padding: 5px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-x:hover {
+  color: #03d7fc;
+}
+
+.social-icon-whatsapp:hover {
+  color: #25d366;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px 15px;
+  }
+  
+  .main-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  .column-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-link {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+  
+  .company-description {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .bottom-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .copyright {
+    order: 2;
+    font-size: 14px;
+  }
+  
+  .social-links {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Desktop: Horizontal layout */
+@media (min-width: 769px) {
+  .footer-columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px 10px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 0;
+  }
+  
+  .contact-icon {
+    margin-right: 0;
+    font-size: 20px;
+  }
+  
+  .contact-text {
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  
+  .social-icon-x,
+  .social-icon-whatsapp {
+    font-size: 28px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 320px) {
+  .footer {
+    padding: 15px 5px 5px;
+  }
+  
+  .column-title {
+    font-size: 16px;
+  }
+  
+  .contact-text {
+    font-size: 13px;
+  }
+  
+  .footer-link {
+    font-size: 14px;
+  }
+  
+  .copyright {
+    font-size: 12px;
+  }
+}

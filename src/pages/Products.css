@@ -1,0 +1,129 @@
+/* Global reset for full width */
+html, body, #root, .app-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.products-page {
+  width: 100%;
+  background-color: #121212;
+  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.products-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.products-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #03d7fc;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.products-message {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.email-button {
+  background-color: #03d7fc;
+  color: #000000;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.email-button:hover {
+  background-color: #02b8d8;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .products-title {
+    font-size: 2.2rem;
+  }
+  
+  .products-message {
+    font-size: 1.3rem;
+  }
+  
+  .email-button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-content {
+    padding: 1.5rem;
+  }
+  
+  .products-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .products-message {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .email-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-content {
+    padding: 1rem;
+  }
+  
+  .products-title {
+    font-size: 1.5rem;
+  }
+  
+  .products-message {
+    font-size: 1rem;
+  }
+  
+  .email-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

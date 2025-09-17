@@ -1,0 +1,245 @@
+.container-header {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #121212;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+
+.marketing-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.marketing {
+  font-size: 58px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.icon1 {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 50px;
+  color: #ffd700;
+  animation: spin 2s linear infinite;
+}
+
+.features-container {
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.features {
+  font-size: 48px;
+  color: #e4e2e2;
+  text-align: center;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+.working-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.working-header {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 5%;
+}
+
+.column-box {
+  flex: 1;
+  background-color: #202020;
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid #45b1e0;
+  box-shadow: 0 0 20px rgba(69, 177, 224, 0.5);
+}
+
+.working-subheader {
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.working-text {
+  font-size: 23px;
+  color: #d3d3d3;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .container {
+    padding: 16px;
+    padding-bottom: 40px;
+  }
+
+  .header-container {
+    padding: 16px 0;
+    margin-bottom: 24px;
+  }
+
+  .header {
+    font-size: 31px;
+  }
+
+  .marketing-container {
+    margin-bottom: 24px;
+  }
+
+  .marketing {
+    font-size: 47px;
+  }
+
+  .icon {
+    margin: 0 12px;
+    font-size: 24px;
+  }
+
+  .features-container {
+    padding: 0 16px;
+    margin-bottom: 24px;
+  }
+
+  .features {
+    font-size: 39px;
+    line-height: 46px;
+  }
+
+  .working-container {
+    margin-bottom: 24px;
+  }
+
+  .working-header {
+    font-size: 31px;
+    margin-bottom: 16px;
+  }
+
+  .columns-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .column-box {
+    padding: 16px;
+    margin: 0 16px 16px 16px;
+    min-width: 85%;
+  }
+
+  .working-subheader {
+    font-size: 23px;
+    margin-bottom: 16px;
+  }
+
+  .working-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 18px;
+    padding-bottom: 45px;
+  }
+
+  .header-container {
+    padding: 18px 0;
+    margin-bottom: 27px;
+  }
+
+  .header {
+    font-size: 31px;
+  }
+
+  .marketing-container {
+    margin-bottom: 27px;
+  }
+
+  .marketing {
+    font-size: 38px;
+  }
+
+  .icon {
+    margin: 0 15px;
+    font-size: 26px;
+  }
+
+  .features-container {
+    padding: 0 18px;
+    margin-bottom: 27px;
+  }
+
+  .features {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .working-container {
+    margin-bottom: 27px;
+  }
+
+  .working-header {
+    font-size: 27px;
+    margin-bottom: 18px;
+  }
+
+  .columns-container {
+    gap: 18px;
+  }
+
+  .column-box {
+    padding: 18px;
+    margin: 0 18px;
+    min-width: 45%;
+  }
+
+  .working-subheader {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+
+  .working-text {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  .icon ion-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+  color: #ffd700; /* Gold color for sparkles */
+}
+}
